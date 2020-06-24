@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="no_contacts">There are no contacts</string>
+    <string name="contact_title_label">Name</string>
+    <string name="email_phone_label">Email</string>
+    <string name="contact_phone_label">Phone</string>
+    <string name="contact_image_title">Contact Image:</string>
+    <string name="new_contact">New Contact</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="plus">+</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="contact_name_hint">Your Name.</string>
+    <string name="alert_no_call_perm">No phone call permission</string>
+    <string name="pick_image_intent_text">select photo</string>
+    <plurals name="subtitle_plural">
+        <item quantity="one">%1$s contact</item>
+        <item quantity="other">%1$s contacts</item>
+    </plurals>
+    <string name="cancel_button_label">Cancel</string>
+    <string name="choose_button_label">Select</string>
+    <string name="label_parent_directory">Parent Directory</string>
+    <string name="label_parent_dir" translatable="false">...</string>
+    <string name="error_dir_access">Directory cannot be accessed</string>
+    <string name="last_edit">Last edited: </string>
+    <string name="permisson_error">Permission error for contacts</string>
+</resources>

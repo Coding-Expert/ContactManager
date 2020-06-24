@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#42403c"
+    tools:context=".group.ContactSelectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:minHeight="?attr/actionBarSize"
+            android:background="#e3691e"
+            >
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_1"
+                />
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Contact"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="30dp"
+                android:textSize="23dp"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/group_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:text="@string/no_contacts" />
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/contactselect_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--&gt;-->
+
+        <!--<Button-->
+            <!--android:id="@+id/cancel"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/cancel"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:id="@+id/save"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/save"-->
+            <!--&gt;-->
+
+        <!--</Button>-->
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>

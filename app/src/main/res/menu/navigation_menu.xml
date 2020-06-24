@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/contact"
+        android:icon="@drawable/contact_1"
+        android:title="Contacts"/>
+    <item android:id="@+id/group"
+        android:icon="@drawable/new_group"
+        android:title="Groups"/>
+    <item android:id="@+id/mycart"
+        android:icon="@mipmap/ic_launcher_round"
+        android:title="My Contact Group">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/social_items"-->
+                <!--android:checkable="true"-->
+                <!--app:showAsAction="always"-->
+                <!--android:title=""-->
+                <!--app:actionLayout="@layout/connect_us"/>-->
+
+        </menu>
+    </item>
+    <item android:id="@+id/read_contact"
+        android:icon="@drawable/import_1"
+        android:title="Import Contact">
+
+    </item>
+    <item android:id="@+id/save_contact"
+            android:icon="@drawable/export"
+            android:title="Export Contact">
+
+    </item>
+
+</menu>

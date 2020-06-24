@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#000000"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Group Name"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="5dp"
+        />
+    <EditText
+        android:id="@+id/group_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFFFFF"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        >
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="cancel"
+            android:textSize="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="right"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="ok"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="right"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

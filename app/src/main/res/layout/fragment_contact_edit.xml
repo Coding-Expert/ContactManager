@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#42403c"
+    >
+        <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+            <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginRight="15dp"
+                      android:layout_marginLeft="15dp"
+                      android:orientation="vertical">
+
+                <include layout="@layout/edit_image_and_name" />
+
+                <LinearLayout
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="30dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_phone_label"
+                        android:textColor="#FFAAA6A6"
+                        android:textSize="14sp"
+                        android:gravity="start|bottom"
+                        android:paddingLeft="5dp"
+                        />
+
+                    <LinearLayout
+                              android:orientation="vertical"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edit_contact_phones_list">
+                        <!--<LinearLayout-->
+                            <!--android:id="@+id/phone_image_layout"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--&gt;-->
+                            <!--<EditText-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_weight="0.2"-->
+                                <!--android:layout_marginRight="20dp"-->
+                                <!--/>-->
+                            <!--<ImageView-->
+                                <!--android:background="@drawable/ic_menu_cancel"-->
+                                <!--android:layout_width="48dp"-->
+                                <!--android:layout_height="48dp"-->
+                                <!--/>-->
+
+                        <!--</LinearLayout>-->
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/edit_contact_add_phone_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/plus"
+                        android:textSize="18sp"
+                        />
+                    </LinearLayout>
+                <LinearLayout
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="30dp"
+                            >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email_phone_label"
+                        android:textColor="#FFAAA6A6"
+                        android:paddingLeft="5dp"
+                        android:textSize="14sp"
+                        android:gravity="start|bottom"
+                        android:backgroundTint="@color/colorGrey"
+                        />
+
+                    <LinearLayout
+                              android:orientation="vertical"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/edit_contact_emails_list">
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/edit_contact_add_email_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/plus"
+                        android:textSize="18sp"
+                        />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/button_group"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/cancel"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Cancel"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:id="@+id/save"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Save"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

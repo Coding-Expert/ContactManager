@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#42403c"
+                >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginStart="16dp"
+                      android:layout_marginRight="10dp"
+                      android:layout_marginTop="16dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp">
+
+                    <ImageView android:id="@+id/view_contact_photo"
+                           android:layout_width="80dp"
+                           android:layout_height="80dp"
+                           android:scaleType="centerInside"
+                           android:cropToPadding="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/contact_title_label"
+                        android:textColor="#FFAAA6A6"
+                        android:textSize="14sp" />
+                    <TextView android:id="@+id/view_contact_name"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textSize="20sp"
+                          android:textColor="#FFFFFF"
+                          android:layout_marginEnd="16dp"
+                          android:layout_marginRight="16dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_phone_label"
+                    android:textColor="#FFAAA6A6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14sp"
+
+                    />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                              android:orientation="vertical"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/view_contact_phones_list">
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_phone_label"
+                    android:textColor="#FFAAA6A6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="0dp"
+                    android:textSize="14sp"
+                    android:gravity="start|center_vertical"
+
+                    />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                              android:orientation="vertical"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/view_contact_emails_list">
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/editbutton_group"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--&gt;-->
+        <!--<Button android:id="@+id/edit"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Edit"-->
+                <!--android:layout_weight="1"-->
+                <!--&gt;-->
+        <!--</Button>-->
+
+        <!--<Button android:id="@+id/delete"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="DELETE"-->
+                <!--android:layout_weight="1"-->
+                <!--&gt;-->
+
+        <!--</Button>-->
+    <!--</LinearLayout>-->
+    </LinearLayout>
+</RelativeLayout>

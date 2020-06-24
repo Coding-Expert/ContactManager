@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "525997428338",
+    "firebase_url": "https://contacts-4dcea.firebaseio.com",
+    "project_id": "contacts-4dcea",
+    "storage_bucket": "contacts-4dcea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525997428338:android:54aa27d034c66dd1ce7ceb",
+        "android_client_info": {
+          "package_name": "com.basicphones.contacts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525997428338-et96m40apd7a2m08jj7slpo28og7pu7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVfwdbiRL7kNmXX3sX4t_71Do7ZiCMvhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525997428338-et96m40apd7a2m08jj7slpo28og7pu7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

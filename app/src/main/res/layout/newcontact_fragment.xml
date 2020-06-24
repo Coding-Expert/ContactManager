@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/contact_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/section_recycler_view"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            />
+        <!--<com.basicphones.contacts.wheel.WheelView-->
+            <!--android:id="@+id/p1"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_width="40dp"-->
+            <!--/>-->
+        <!--<ScrollView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/indexing_layout"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_marginRight="0dp"-->
+                <!--&gt;-->
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="100dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="sdfsdfdf"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="#FFFFFF"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                    <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+            <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="#FFFFFF"
+        android:text="@string/no_contacts" />
+    <ProgressBar
+        android:id="@+id/progress_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:indeterminate="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/newcontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity ="bottom|end"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@android:color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
